@@ -13,7 +13,7 @@
 					include("conexion_db.php");
 					include("controlador_registrar.php");	
 				?>
-				<FORM action = "login.php" method  = "POST">
+				<FORM action = "Registrar.php" method  = "POST">
 				  	<input type="text" name="nombre_R" placeholder = "Nombre" class="frm_i">
 				  	<input type="text" name="apellido_R" placeholder="Apellido" class="frm_i">
 				  	<input type="email" name="correo_R" placeholder="Correo" class="frm_i">
