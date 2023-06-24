@@ -1,0 +1,152 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    background-color: #2E2E2E;
+    margin: 0px;
+    padding-top: 5px; 
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    margin: -10px;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+
+/* Servicios */
+
+.Servicios{
+    background: #1E1E1E;
+    overflow-x: hidden;
+    margin: 15px;
+}
+.Servicios h2{
+    text-align: center;
+    padding: 40px;
+}
+
+.containor {
+    display: flex;
+    width: 90vw;
+}
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 20px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+h2{
+    margin-bottom: 20px;
+    margin-top: auto;
+    color: #fff;
+}
+
+/* Productos */
+
+.Productos h2{
+    text-align:  center;
+    color: #1CB698;
+}
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#container div {
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    padding: 13px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #1e2326;
+}
+#container div h2 {
+    color: #fff;
+    font-size: 18px;
+}
+#container div h3 {
+    color: #1CB698;
+    font-size: 14px;
+}
+#container div img {
+    box-shadow: 0 10px 6px -6px rgba(6,4,12,0.801);
+    max-width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    transition: transform .5s ease;
+}
+#container div img:hover {
+    transform: scale(1.1);
+}
+footer{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
